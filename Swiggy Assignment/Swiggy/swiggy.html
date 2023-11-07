@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+        }
+        .main{
+            background-color:#ffffff ;
+            display: flex;
+            float: left;
+            width: 750px;
+            padding-left: 10PX;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 50px;
+            height: 550px;
+
+        }
+        .main-sub{
+            position: absolute;
+            top: 90px;
+            left: 475px;
+        }
+        .main-sub div{
+            display: inline-block;
+        }
+        .marq{
+            background-color:#ffffff;
+            position: absolute;
+            top: 190px;
+            left: 20px;
+        }
+        .content{
+            color: #93959f;
+            font-size: 25px;
+            font-weight: 200;
+            position: absolute;
+            top: 240px;
+            left: 20px;
+        }
+        .search-bar{
+            background-color: #fc8019;
+        }
+        .search-bar input{
+            width: 650px;
+            margin: 10px 10px;
+            border: 1px #93959f solid;
+            height: 45px;
+            font-size: large;
+            font-weight: 600;
+            position: absolute;
+            top: 330px;
+            left: 10px;
+            padding: 10px;
+            padding-left: 20px;
+        }
+        .locate a{
+            text-decoration: none;
+            color: #686b78;
+            font-weight: 400;
+            position: absolute;
+            top: 365px;
+            left: 450px;
+            font-size: medium;
+        }
+        .button1 input{
+            height: 67px;
+            width: 150px;
+            background-color: #fc8019;
+            color: #ffffff;
+            border-style: none;
+            position: absolute;
+            top: 340px;
+            left: 552px;
+            font-size: large;
+            font-weight: 900;
+        }
+        .content2{
+            color: #93959f;
+            font-weight: 100;
+            position: absolute;
+            top: 425px;
+            left: 20px;
+            font-size: 15px;
+        }
+        .content3{
+            color: #93959f;
+            position: absolute;
+            left: 20px;
+            top: 470px;
+            width: 650px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .content3 span{
+            color: #686b78;
+        }
+        .main2{
+            background-image: url(./img3.jfif);
+            background-repeat: no-repeat;
+            background-size:cover;
+            display: flex;
+            width: cover;
+            height: 600px;
+        }
+        .main2 img{
+            width: cover;
+            height: cover;
+        }
+        .body1{
+            height: 450px;
+            width: cover;
+            background-color: #2b1e16;
+        }
+        .sub1 img{
+            height: 250px;
+            position: absolute;
+            left: 110px;
+            width: 120px;
+        }
+        .sub1 h4{
+            position: absolute;
+            top: 900px;
+            left: 100px;
+            color: #ffffff;
+            font-size: larger;
+            font-weight: 600;
+        }
+        .p1{
+            position: absolute;
+            top: 950px;
+            left: 60px;
+            color: #e0cbc1;
+        }
+        .p2{
+            position: absolute;
+            top: 970px;
+            left: 65px;
+            color: #e0cbc1;
+        }
+        .sub2 img{
+            height: 250px;
+            position: absolute;
+            left: 610px;
+            width: 125px;
+        }
+        .sub2 h4{
+            position: absolute;
+            top: 900px;
+            left: 580px;
+            color: #ffffff;
+            font-size: larger;
+            font-weight: 600;
+        }
+        .p3{
+            position: absolute;
+            top: 950px;
+            left: 550px;
+            color: #e0cbc1;
+        }
+        .p4{
+            position: absolute;
+            top: 970px;
+            left: 555px ;
+            color: #e0cbc1;
+        }
+        .sub3 img{
+            height: 250px;
+            position: absolute;
+            left: 1090px;
+            width: 140px;
+            padding-top: 20px;
+        }
+        .sub3 h4{
+            position: absolute;
+            top: 900px;
+            left: 1070px;
+            color: #ffffff;
+            font-size: larger;
+            font-weight: 600;
+        }
+        .p5{
+            position: absolute;
+            top: 950px;
+            left: 1040px;
+            color: #e0cbc1; 
+        }
+        .p6{
+            position: absolute;
+            top: 970px;
+            left: 1055px ;
+            color: #e0cbc1;
+        }
+        .body2{
+            height: 630px;
+            width: cover;
+            background-color: #ffffff;
+        }
+        .img1{
+            height: 500px;
+            position: absolute;
+            top: 1050px;
+            left: 565px;
+            width: 400px;
+        }
+        .img2{
+            height: 507px;
+            position: absolute;
+            top: 1182px;
+            left: 940px;
+            width: 400px;
+        }
+        .sub4-f{
+            position: absolute;
+            left: 20px;
+            top: 1240px;
+            color: #282c3f;
+            font-size: 40px;
+        }
+        .sub4-s{
+            position: absolute;
+            left: 20px;
+            top: 1280px;
+            font-size: 40px;
+            color: #282c3f;
+        }
+        .p7{
+            position: absolute;
+            top: 1360px;
+            left: 20px;
+            color: #686b78;
+            font-size: larger;
+        }
+        .p8{
+            position: absolute;
+            top: 1385px;
+            left: 20px;
+            color: #686b78;
+            font-size: larger; 
+        }
+        .img3{
+            width: 200px;
+            position: absolute;
+            left: 20px;
+            top: 1500px;
+        }
+        .img4{
+            width: 200px;
+            position: absolute;
+            left: 250px;
+            top: 1500px;
+        }
+        .footer{
+            height: 13750px;
+            width: cover;
+            background-color: #000000;
+        }
+        .company h3{
+            position: absolute;
+            top: 1750px;
+            left: 20px;
+            color: #808080;
+        }
+        .company1{
+            position: absolute;
+            top: 1800px;
+            left: 20px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .company1 p{
+            font-size: larger;
+        }
+        .contact h3{
+            color: #808080;
+            position: absolute;
+            top: 1750px;
+            left: 400px;
+        }
+        .contact1{
+            position: absolute;
+            top: 1800px;
+            left: 400px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .contact1 p{
+            font-size: larger;
+        }
+        .legal h3{
+            color: #808080;
+            position: absolute;
+            top: 1750px;
+            left: 700px;
+        }
+        .legal1{
+            position: absolute;
+            top: 1800px;
+            left: 700px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .legal1 p{
+            font-size: larger;
+        }
+        .footerimg1{
+            width: 200px;
+            position: absolute;
+            left: 1100px;
+            top: 1755px ;
+            border-color: #ffffff;
+        }
+        .footerimg2{
+            width: 200px;
+            position: absolute;
+            left: 1100px;
+            top: 1850px;
+            border: #ffffff;
+        }
+        .places h3{
+            color: #808080;
+            position: absolute;
+            top: 2300px;
+            left: 20px;
+        }
+        .places1{
+            position: absolute;
+            top: 2350px;
+            left: 20px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .places1 p{
+            font-size: large;
+        }
+        .places2{
+            position: absolute;
+            top: 2350px;
+            left: 420px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .places2 p{
+            font-size: large;
+        }
+        .places3{
+            position: absolute;
+            top: 2350px;
+            left: 820px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .places3 p{
+            font-size: large;
+        }
+        .places4{
+            position: absolute;
+            top: 2350px;
+            left: 1220px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .places4{
+            font-size: large;
+        }
+        .bestplaces h3{
+            color: #808080;
+            position: absolute;
+            top: 8200px;
+            left: 20px;
+        }
+        .bestplaces1{
+            position: absolute;
+            top: 8250px;
+            left: 20px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .bestplaces1 p{
+            font-size: large;
+        }
+        .bestplaces2{
+            position: absolute;
+            top: 8250px;
+            left: 400px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .bestplaces2 p{
+            font-size: large;
+        }
+        .bestplaces3{
+            position: absolute;
+            top: 8250px;
+            left: 800px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .bestplaces3 p{
+            font-size: large;
+        }
+        .bestplaces4{
+            position: absolute;
+            top: 8250px;
+            left: 1200px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .bestplaces4 p{
+            font-size: large;
+        }
+        .cuisines h3{
+            color: #808080;
+            position: absolute;
+            top: 14100px;
+            left: 20px;
+        }
+        .cuisines1{
+            position: absolute;
+            top: 14150px;
+            left: 20px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .cuisines1 p{
+            font-size: large;
+        }
+        .cuisines2{
+            position: absolute;
+            top: 14150px;
+            left: 420px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .cuisines2 p{
+            font-size: large;
+        }
+        .cuisines3{
+            position: absolute;
+            top: 14150px;
+            left: 820px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .cuisines3 p{
+            font-size: large;
+        }
+        .cuisines4{
+            position: absolute;
+            top: 14150px;
+            left: 1220px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .cuisines4 p{
+            font-size: large;
+        }
+        .res h3{
+            color: #808080;
+            position: absolute;
+            top: 15170px;
+            left: 20px;
+        }
+        .res1{
+            position: absolute;
+            top: 15210px;
+            left: 20px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .res1 p{
+            font-size: large;
+        }
+        .res2{
+            position: absolute;
+            top: 15210px;
+            right: 100px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .res2 p{
+            font-size: large;
+        }
+        .end{
+            position: absolute;
+            top: 15310px;
+            left: 10px;
+        }
+        .end1{
+            position: absolute;
+            top: 15320px;
+            left: 700px;
+            font-weight: 300;
+            color: #ffffff;
+            padding-top: 10px;
+        }
+        .end1 p{
+            font-size: x-large;
+        }
+        .one{
+            position: absolute;
+            top: 15350px;
+            right: 180px;
+            padding-top: 10px;
+        }
+        .two{
+            position: absolute;
+            top: 15350px;
+            right: 140px;
+            padding-top: 10px;
+        }
+        .three{
+            position: absolute;
+            top: 15350px;
+            right: 100px;
+            padding-top: 10px;
+        }
+        .four{
+            position: absolute;
+            top: 15350px;
+            right: 60px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="main">
+            <img src="/swiggy/imgs/download000.png" style="height: 60px;width: 200px; padding-left: 20px; padding: 20px;">
+            <div class="main-sub">
+                <div><a href="" style="background-color: #ffffff;color: #000000; padding: 10px 25px; text-decoration: none;">Login</a></div>
+                <div><a href="" style="background-color: #000000; color: #ffffff; padding: 10px 25px; text-decoration: none;">Sign Up</a></div>
+            </div>
+            <div class="marq">
+                <marquee direction="up">
+                    <h1>Hungry?</h1>
+                </marquee>
+            </div>
+            <div class="content">
+                <p>Order food from favourite restaurants near you.</p>
+            </div>
+            <div class="content1">
+                <div class="search-bar">
+                <input type="text" placeholder="Enter your delivery location">
+                </div>
+                <div class="locate">
+                    <a href=""><i class="fa-solid fa-location-crosshairs" style="color: #000000;height: 200px;"></i>Locate Me</a>
+                </div>
+                <div class="button1">
+                    <input type="button" value="FIND FOOD">
+                </div>
+                <div class="content2">
+                    <p>POPULAR CITIES IN INDIA</p>
+                </div>
+                <div class="content3">
+                    <label><span>Ahmedabad</span> Bangalore <span>Chennai</span> Delhi <span>Gurgaon</span> Hyderabad <span>Kolkata</span> Mumbai <span>Pune</span> & more.</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="/swiggy/imgs/Screenshot 2023-08-01 182424.png" alt="food pic" style="position: absolute; width: 759px; height: 600px;" >
+        </div>
+        <div class="main2">
+        </div>
+        <div class="body1">
+            <div class="sub1">
+                <img src="/swiggy/imgs/4x_-_No_min_order_x0bxuf.webp">
+                <h4>No Minimum Order</h4>
+                <p class="p1">Order in for yourself or for the group,</p>
+                <p class="p2">with no restrictions on order value</p>
+            </div>
+            <div class="sub2">
+                <img src="/swiggy/imgs/4x_Live_order_zzotwy.webp">
+                <h4>Live Order Tracking</h4>
+                <p class="p3">Know where your order is at all times,</p>
+                <p class="p4">from the restaurant to your doorstep</p>
+            </div>
+            <div class="sub3">
+                <img src="/swiggy/imgs/4x_-_Super_fast_delivery_awv7sn.webp">
+                <h4>Lightning-Fast Delivery</h4>
+                <p class="p5">Experience Swiggy's superfast delivery</p>
+                <p class="p6">for food delivered fresh & on time</p>
+            </div>
+        </div>
+        <div class="body2">
+            <div class="sub4">
+                <h1 class="sub4-f">Restaurants in</h1>
+                <h1 class="sub4-s">your pocket</h1>
+                <p class="p7">Order from your favorite restaurants & track</p>
+                <p class="p8">on the go, with the all-new Swiggy app.</p>
+                <img src="/swiggy/imgs/pixel_wbdy4n.webp" class="img1">
+                <img src="/swiggy/imgs/iPhone_wgconp_j0d1fn.webp" class="img2">
+                <img src="/swiggy/imgs/icon-GooglePlay_1_zixjxl.webp" class="img3">
+                <img src="/swiggy/imgs/icon-AppStore_lg30tv.webp" class="img4">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <div>
+                    <div class="company">
+                        <h3>COMPANY</h3>
+                    </div>
+                    <div class="company1">
+                        <p>About us</p>
+                        <p>Team</p>
+                        <p>Careers</p>
+                        <p>Swiggy Blog</p>
+                        <p>Bug Bounty</p>
+                        <p>Swiggy One</p>
+                        <p>Swiggy Corporate</p>
+                        <p>Swiggy Instamart</p>
+                        <p>Swiggy Genie</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact">
+                        <h3>CONTACT</h3>
+                    </div>
+                    <div class="contact1">
+                        <p>Help & Support</p>
+                        <p>Partner with us</p>
+                        <p>Ride with us</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="legal">
+                        <h3>LEGAL</h3>
+                    </div>
+                    <div class="legal1">
+                        <p>Terms & Conditions</p>
+                        <p>Refund & Cancellation</p>
+                        <p>Privacy Policy</p>
+                        <p>Cookie Policy</p>
+                        <p>Offer Terms</p>
+                        <p>Phishing & Fraud</p>
+                        <p>Corporate - Swiggy Money Codes Terms and Conditions</p>
+                        <p>Corporate - Swiggy Discount Voucher Terms and Conditions</p>
+                    </div>
+                </div>
+                <img src="/swiggy/imgs/icon-AppStore_lg30tv.webp" class="footerimg1">
+                <img src="/swiggy/imgs/icon-GooglePlay_1_zixjxl.webp" class="footerimg2">
+            </div>
+            <div class="footer2">
+                <div class="places">
+                    <h3>WE DELIVER TO</h3>
+                </div>
+                <div class="places1">
+                    <p>Abohar</p>
+                    <p>Adilabad</p>
+                    <p>Adoni</p>
+                    <p>Agra</p>
+                    <p>Ahmedabad</p>
+                    <p>Ahmednagar</p>
+                    <p>Aizawl</p>
+                    <p>Ajmer</p>
+                    <p>Akola</p>
+                    <p>Alappuzha</p>
+                    <p>Aligarh</p>
+                    <p>Alipurduar</p>
+                    <p>Allahabad</p>
+                    <p>Almora</p>
+                    <p>Alwar</p>
+                    <p>Ambajogai</p>
+                    <p>Ambala</p>
+                    <p>Ambikapur</p>
+                    <p>Ambur</p>
+                    <p>Amravati</p>
+                    <p>Amreli</p>
+                    <p>Amritsar</p>
+                    <p>Anand</p>
+                    <p>Anantapur</p>
+                    <p>Ankleshwar</p>
+                    <p>Arakkonam</p>
+                    <p>Arambagh</p>
+                    <p>Araria</p>
+                    <p>Arrah</p>
+                    <p>Asansol</p>
+                    <p>Aurangabad</p>
+                    <p>Aurangabadbihar</p>
+                    <p>Azamgarh</p>
+                    <p>Baddi</p>
+                    <p>Bagalkot</p>
+                    <p>Bagdogra</p>
+                    <p>Bahadurgarh</p>
+                    <p>Bahraich</p>
+                    <p>Balaghat</p>
+                    <p>Balangir</p>
+                    <p>Balasore</p>
+                    <p>Ballari</p>
+                    <p>Ballia</p>
+                    <p>Balrampur</p>
+                    <p>Balurghat</p>
+                    <p>Banda</p>
+                    <p>Bangalore</p>
+                    <p>Bantwal</p>
+                    <p>Baramati</p>
+                    <p>Baran</p>
+                    <p>Bardhaman</p>
+                    <p>Bardoli</p>
+                    <p>Bareilly</p>
+                    <p>Barh</p>
+                    <p>Baripada</p>
+                    <p>Barmer</p>
+                    <p>Barnala</p>
+                    <p>Barshi</p>
+                    <p>Basirhat</p>
+                    <p>Basti</p>
+                    <p>Batala</p>
+                    <p>Bathinda</p>
+                    <p>Beawar</p>
+                    <p>Beed</p>
+                    <p>Begusarai</p>
+                    <p>Bela-Pratapgarh</p>
+                    <p>Belgaum</p>
+                    <p>Berhampore</p>
+                    <p>Berhampur</p>
+                    <p>Bettiah</p>
+                    <p>Betul</p>
+                    <p>Bhadohi</p>
+                    <p>Bhadrachalam</p>
+                    <p>Bhadrak</p>
+                    <p>Bhadravati</p>
+                    <p>Bhagalpur</p>
+                    <p>Bhandara</p>
+                    <p>Bharabanki</p>
+                    <p>Bharatpur</p>
+                    <p>Bharuch</p>
+                    <p>Bhatkal</p>
+                    <p>Bhavnagar</p>
+                    <p>Bhawanipatna</p>
+                    <p>Bhilai</p>
+                    <p>Bhilwara</p>
+                    <p>Bhimavaram</p>
+                    <p>Bhind</p>
+                    <p>Bhiwadi</p>
+                    <p>Bhiwani</p>
+                    <p>Bhopal</p>
+                    <p>Bhubaneswar</p>
+                    <p>Bhuj</p>
+                    <p>Bhusawal</p>
+                    <p>Bidar</p>
+                    <p>Biharsharif</p>
+                    <p>Bijapur</p>
+                    <p>Bijnor</p>
+                    <p>Bikaner</p>
+                    <p>Bilaspur</p>
+                    <p>Bilimora</p>
+                    <p>Biswanath-Chariali</p>
+                    <p>Bodhan-Rural</p>
+                    <p>Bodinayakanur</p>
+                    <p>Boisar</p>
+                    <p>Bolpur</p>
+                    <p>Bongaigaon</p>
+                    <p>Bongaon</p>
+                    <p>Budaun</p>
+                    <p>Budhwal</p>
+                    <p>Bulandshahr</p>
+                    <p>Buldana</p>
+                    <p>Bundi</p>
+                    <p>Burhanpur</p>
+                    <p>Buxar</p>
+                    <p>Central-Goa</p>
+                    <p>Chaibasa</p>
+                    <p>Chakdaha</p>
+                    <p>Chalisgaon</p>
+                    <p>Chandausi</p>
+                    <p>Chandigarh</p>
+                    <p>Chandrapur</p>
+                    <p>Chennai</p>
+                    <p>Chhapra</p>
+                    <p>Chhatarpur</p>
+                    <p>Chhindwara</p>
+                    <p>Chidambaram</p>
+                    <p>Chikhli</p>
+                    <p>Chikkaballapur</p>
+                    <p>Chikmagalur</p>
+                    <p>Chiplun</p>
+                    <p>Chitradurga</p>
+                    <p>Chittoor</p>
+                    <p>Chittorgarh</p>
+                    <p>Churu</p>
+                    <p>Coimbatore</p>
+                    <p>Cooch-Behar</p>
+                    <p>Cuddalore</p>
+                    <p>Cuttack</p>
+                    <p>Dahanu</p>
+                    <p>Dahod</p>
+                    <p>Daltonganj</p>
+                    <p>Daman</p>
+                    <p>Darbhanga</p>
+                    <p>Darjeeling</p>
+                    <p>Dasuya</p>
+                    <p>Dausa</p>
+                    <p>Davanagere</p>
+                    <p>Dehradun</p>
+                    <p>Dehri</p>
+                </div>
+                <div class="places2">
+                    <p>Delhi</p>
+                    <p>Deoghar</p>
+                    <p>Deoria-City</p>
+                    <p>Dewas</p>
+                    <p>Dhanbad</p>
+                    <p>Dhar</p>
+                    <p>Dharamshala</p>
+                    <p>Dharapuram</p>
+                    <p>Dharmapuri</p>
+                    <p>Dharwad</p>
+                    <p>Dholpur</p>
+                    <p>Dhule</p>
+                    <p>Dibrugarh</p>
+                    <p>Digboi</p>
+                    <p>Dimapur</p>
+                    <p>Dindigul</p>
+                    <p>Diu</p>
+                    <p>Doddaballapura</p>
+                    <p>Duliajan</p>
+                    <p>Dumka</p>
+                    <p>Dungarpur</p>
+                    <p>Durgapur</p>
+                    <p>Eluru</p>
+                    <p>Erode</p>
+                    <p>Etah</p>
+                    <p>Etawah</p>
+                    <p>Faizabad</p>
+                    <p>Faridabad</p>
+                    <p>Faridkot</p>
+                    <p>Farrukhabad</p>
+                    <p>Fatehabad</p>
+                    <p>Fatehgarh-Sahib</p>
+                    <p>Fatehpur</p>
+                    <p>Fazilka</p>
+                    <p>Firozabad</p>
+                    <p>Firozpur</p>
+                    <p>Gadag-Betigeri</p>
+                    <p>Gadwal</p>
+                    <p>Gandhidham</p>
+                    <p>Gangapur-City</p>
+                    <p>Gangarampur</p>
+                    <p>Gangtok</p>
+                    <p>Gauriganj</p>
+                    <p>Gaya</p>
+                    <p>Ghazipur</p>
+                    <p>Giridih</p>
+                    <p>Godhra</p>
+                    <p>Gokak</p>
+                    <p>Golaghat</p>
+                    <p>Gonda</p>
+                    <p>Gondia</p>
+                    <p>Gopalganj</p>
+                    <p>Gorakhpur</p>
+                    <p>Gudivada</p>
+                    <p>Gudur</p>
+                    <p>Guna</p>
+                    <p>Guntakal
+                    <p>Guntur</p>
+                    <p>Gurdaspur</p>
+                    <p>Gurgaon</p>
+                    <p>Guwahati</p>
+                    <p>Gwalior</p>
+                    <p>Habra</p>
+                    <p>Hajipur</p>
+                    <p>Haldia</p>
+                    <p>Haldwani</p>
+                    <p>Halol</p>
+                    <p>Hamirpur</p>
+                    <p>Hampi</p>
+                    <p>Hansi</p>
+                    <p>Hanumangarh</p>
+                    <p>Hapur</p>
+                    <p>Hardoi</p>
+                    <p>Haridwar</p>
+                    <p>Hassan</p>
+                    <p>Hathras</p>
+                    <p>Haveri</p>
+                    <p>Himmatnagar</p>
+                    <p>Hisar</p>
+                    <p>Hojai</p>
+                    <p>Hoshangabad</p>
+                    <p>Hoshiarpur</p>
+                    <p>Hospet</p>
+                    <p>Hosur</p>
+                    <p>Hubli</p>
+                    <p>Hyderabad</p>
+                    <p>Ichalkaranji</p>
+                    <p>Imphal</p>
+                    <p>Indore</p>
+                    <p>Itanagar</p>
+                    <p>Itarsi</p>
+                    <p>Jabalpur</p>
+                    <p>Jagdalpur</p>
+                    <p>Jagraon</p>
+                    <p>Jagtial</p>
+                    <p>Jahanabad</p>
+                    <p>Jaipur</p>
+                    <p>Jalandhar</p>
+                    <p>Jalgaon</p>
+                    <p>Jalna</p>
+                    <p>Jalpaiguri</p>
+                    <p>Jammu</p>
+                    <p>Jamui</p>
+                    <p>Jangipur</p>
+                    <p>Jaunpur</p>
+                    <p>Jhalawar</p>
+                    <p>Jhansi</p>
+                    <p>Jhargram</p>
+                    <p>Jharsuguda</p>
+                    <p>Jhunjhunu</p>
+                    <p>Jind</p>
+                    <p>Jjajjar</p>
+                    <p>Jodhpur</p>
+                    <p>Jorhat</p>
+                    <p>Junagadh</p>
+                    <p>Kadapa</p>
+                    <p>Kadayanallur</p>
+                    <p>Kadiri</p>
+                    <p>Kaithal</p>
+                    <p>Kakinada</p>
+                    <p>Kalaburagi</p>
+                    <p>Kamareddy</p>
+                    <p>Kanchrapara</p>
+                    <p>Kannauj</p>
+                    <p>Kannur</p>
+                    <p>Kanpur</p>
+                    <p>Kanyakumari</p>
+                    <p>Kapurthala</p>
+                    <p>Karad</p>
+                    <p>Karaikal</p>
+                    <p>Karaikkudi</p>
+                    <p>Karimnagar</p>
+                    <p>Karnal</p>
+                    <p>Karur</p>
+                    <p>Karwar</p>
+                    <p>Kashipur</p>
+                    <p>Katihar</p>
+                    <p>Katni</p>
+                    <p>Kavali</p>
+                    <p>Kayamkulam</p>
+                    <p>Kendrapada</p>
+                    <p>Kendujhar</p>
+                    <p>Khagaria</p>
+                    <p>Khalilabad</p>
+                    <p>Khamgaon</p>
+                    <p>Khammam</p>
+                    <p>Khandwa</p>
+                    <p>kadha</p>
+                    <p>Khanna</p>
+                </div>
+                <div class="places3">
+                    <p>Kharagpur</p>
+                    <p>Kishanganj</p>
+                    <p>Kishangarh</p>
+                    <p>Kochi</p>
+                    <p>Kohima</p>
+                    <p>Kokrajhar</p>
+                    <p>Kolar</p>
+                    <p>Kolhapur</p>
+                    <p>Kolkata</p>
+                    <p>Kollam</p>
+                    <p>Koppal</p>
+                    <p>Korba</p>
+                    <p>Kota</p>
+                    <p>Kotdwar</p>
+                    <p>Kothagudem</p>
+                    <p>Kottarakkara</p>
+                    <p>Kottayam</p>
+                    <p>Kovilpatti</p>
+                    <p>Kozhikode</p>
+                    <p>Krishnagiri</p>
+                    <p>Krishnanagar</p>
+                    <p>Kullu</p>
+                    <p>Kumbakonam</p>
+                    <p>Kurnool</p>
+                    <p>Kurukshetra</p>
+                    <p>Kushalnagar</p>
+                    <p>Lakhimpur</p>
+                    <p>Lalitpur</p>
+                    <p>Latur</p>
+                    <p>Lonavla</p>
+                    <p>Lpu-Phagwara</p>
+                    <p>Lucknow</p>
+                    <p>Ludhiana</p>
+                    <p>Machilipatnam</p>
+                    <p>Madanapalle</p>
+                    <p>Madhubani</p>
+                    <p>Madikeri</p>
+                    <p>Madurai</p>
+                    <p>Mahbubnagar</p>
+                    <p>Mahoba</p>
+                    <p>Mainpuri</p>
+                    <p>Malappuram</p>
+                    <p>Malda</p>
+                    <p>Malegaon</p>
+                    <p>Malout</p>
+                    <p>Manali</p>
+                    <p>Mancherial</p>
+                    <p>Mandapeta</p>
+                    <p>Mandi-Dabwali</p>
+                    <p>Mandi-Gobindgarh</p>
+                    <p>Mandsaur</p>
+                    <p>Mandya</p>
+                    <p>Mangaluru</p>
+                    <p>Manipal</p>
+                    <p>Mansa</p>
+                    <p>Markapur</p>
+                    <p>Mathura</p>
+                    <p>Maunath-Bhanjan</p>
+                    <p>Mayiladuthurai</p>
+                    <p>Medinipur</p>
+                    <p>Meerut</p>
+                    <p>Mehsana</p>
+                    <p>Mettupalayam</p>
+                    <p>Miryalaguda</p>
+                    <p>Mirzapur</p>
+                    <p>Modinagar</p>
+                    <p>Moga</p>
+                    <p>Moradabad</p>
+                    <p>Morbi</p>
+                    <p>Morena</p>
+                    <p>Motihari</p>
+                    <p>Mount-Abu</p>
+                    <p>Mughalsarai</p>
+                    <p>Mukerian</p>
+                    <p>Muktsar</p>
+                    <p>Mumbai</p>
+                    <p>Munger</p>
+                    <p>Mussoorie</p>
+                    <p>Muzaffarnagar</p>
+                    <p>Muzaffarpur</p>
+                    <p>Mysore</p>
+                    <p>Nabadwip</p>
+                    <p>Nabha</p>
+                    <p>Nadiad</p>
+                    <p>Nagaon</p>
+                    <p>Nagapattinam</p>
+                    <p>Nagda</p>
+                    <p>Nagercoil</p>
+                    <p>Nagpur</p>
+                    <p>Naharlagun</p>
+                    <p>Nainital</p>
+                    <p>Nakodar</p>
+                    <p>Nalbari</p>
+                    <p>Nalgonda</p>
+                    <p>Namakkal</p>
+                    <p>Nanded</p>
+                    <p>Nandurbar</p>
+                    <p>Nandyal</p>
+                    <p>Nangal</p>
+                    <p>Naraingarh</p>
+                    <p>Narasaraopet</p>
+                    <p>Narnaul</p>
+                    <p>Narsinghpur</p>
+                    <p>Nashik</p>
+                    <p>Navsari</p>
+                    <p>Neemuch</p>
+                    <p>Nellore</p>
+                    <p>Neyveli</p>
+                    <p>Nirmal</p>
+                    <p>Nizamabad</p>
+                    <p>Noida</p>
+                    <p>Noida-1</p>
+                    <p>North-Lakhimpur</p>
+                    <p>Ongole</p>
+                    <p>Ooty</p>
+                    <p>Orai</p>
+                    <p>Osmanabad</p>
+                    <p>Palakkad</p>
+                    <p>Palakollu</p>
+                    <p>Palampur</p>
+                    <p>Palani</p>
+                    <p>Palanur</p>
+                    <p>Palghar</p>
+                    <p>Pali</p>
+                    <p>Palwal</p>
+                    <p>Panipat</p>
+                    <p>Paradeep</p>
+                    <p>Paramakudi</p>
+                    <p>Parbhani</p>
+                    <p>Parvathipuram</p>
+                    <p>Pathankot</p>
+                    <p>Patiala</p>
+                    <p>Patna</p>
+                    <p>Pattukkottai</p>
+                    <p>Perambalur</p>
+                    <p>Phagwara</p>
+                    <p>Piler</p>
+                    <p>Pilibhit</p>
+                    <p>Pilkhuwa</p>
+                    <p>Pinjore-City</p>
+                    <p>Pondicherry</p>
+                    <p>Porbandar</p>
+                    <p>Port-Blair</p>
+                    <p>Pratapgarh</p>
+                    <p>Proddatur</p>
+                    <p>Pudukkottai</p>
+                    <p>Pune</p>
+                    <p>Puri</p>
+                    <p>Purnea</p>
+                </div>
+                <div class="places4">
+                    <p>Purulia</p>
+                    <p>Pusad</p>
+                    <p>Puttur</p>
+                    <p>Rae-Bareli</p>
+                    <p>Raghunathpur</p>
+                    <p>Raichur</p>
+                    <p>Raiganj</p>
+                    <p>Raigarh</p>
+                    <p>Raipur</p>
+                    <p>Rajahmundry</p>
+                    <p>Rajampet</p>
+                    <p>Rajapalayam</p>
+                    <p>Rajgarh</p>
+                    <p>Rajkot</p>
+                    <p>Rajnandgaon</p>
+                    <p>Rajsamand</p>
+                    <p>Ramagundam</p>
+                    <p>Ramanagara</p>
+                    <p>Ramanathapuram</p>
+                    <p>Ramgarh</p>
+                    <p>Rampur</p>
+                    <p>Ranaghat-Wb</p>
+                    <p>Ranchi</p>
+                    <p>Rangia</p>
+                    <p>Rangpo</p>
+                    <p>Ranibennur</p>
+                    <p>Raniganj</p>
+                    <p>Ratlam</p>
+                    <p>Ratnagiri</p>
+                    <p>Ravulapalem</p>
+                    <p>Rayachoty</p>
+                    <p>Rayagada</p>
+                    <p>Rewa</p>
+                    <p>Rewari</p>
+                    <p>Rishikesh</p>
+                    <p>Roha</p>
+                    <p>Rohtak</p>
+                    <p>Roorkee</p>
+                    <p>Ropar</p>
+                    <p>Rourkela</p>
+                    <p>Rudrapur</p>
+                    <p>Sagar</p>
+                    <p>Saharanpur</p>
+                    <p>Saharsa</p>
+                    <p>Salem</p>
+                    <p>Samastipur</p>
+                    <p>Sambalpur</p>
+                    <p>Sangamner</p>
+                    <p>Sangli</p>
+                    <p>Sangrur</p>
+                    <p>Sankarankoil</p>
+                    <p>Santipur</p>
+                    <p>Sasaram</p>
+                    <p>Satara</p>
+                    <p>Satna</p>
+                    <p>Sawai-Madhopur</p>
+                    <p>Sehore</p>
+                    <p>Shahjahanpur</p>
+                    <p>Shamli</p>
+                    <p>Shikohabad</p>
+                    <p>Shillong</p>
+                    <p>Shimla</p>
+                    <p>Shirdi-City</p>
+                    <p>Shivamogga</p>
+                    <p>Shivpuri</p>
+                    <p>Siddipet</p>
+                    <p>Sikar</p>
+                    <p>Silchar</p>
+                    <p>Siliguri</p>
+                    <p>Silvassa</p>
+                    <p>Sindhanur</p>
+                    <p>Singrauli</p>
+                    <p>Sirkali</p>
+                    <p>Sirsa</p>
+                    <p>Sirsi</p>
+                    <p>Sitamarhi</p>
+                    <p>Sitapur</p>
+                    <p>Sivakasi</p>
+                    <p>Sivasagar</p>
+                    <p> Siwan</p>
+                    <p>Solan</p>
+                    <p>Solapur</p>
+                    <p>Sonipat</p>
+                    <p>Sri-Ganganagar</p>
+                    <p>Srikakulam</p>
+                    <p>Srivilliputhur</p>
+                    <p>Sullurpeta</p>
+                    <p>Sultanpur</p>
+                    <p>Sulthan-Bathery</p>
+                    <p>Surat</p>
+                    <p>Suratgarh</p>
+                    <p>Surendranagar-Dudhrej</p>
+                    <p>Suri</p>
+                    <p>Suryapet</p>
+                    <p>Tadepalligudem</p>
+                    <p>Tadpatri</p>
+                    <p>Tanuku</p>
+                    <p>Tarn-Taran-Sahib</p>
+                    <p>Tenkasi</p>
+                    <p>Tezpur</p>
+                    <p>Thanjavur</p>
+                    <p>Theni</p>
+                    <p>Thiruvalla</p>
+                    <p>Thiruvallur</p>
+                    <p>Thiruvananthapuram</p>
+                    <p>Thiruvarur</p>
+                    <p>Thodupuzha</p>
+                    <p>Thoothukudi</p>
+                    <p>Thrissur</p>
+                    <p>Tindivanam</p>
+                    <p>Tinsukia</p>
+                    <p>Tiptur</p>
+                    <p>Tirunelveli</p>
+                    <p>Tirupati</p>
+                    <p>Tirupattur</p>
+                    <p>Tirupur</p>
+                    <p>Tiruttani</p>
+                    <p>Tiruvannamalai</p>
+                    <p>Tohana</p>
+                    <p>Trichy</p>
+                    <p>Tumakuru</p>
+                    <p>Tuni</p>
+                    <p>Udgir</p>
+                    <p>Udumalaipettai</p>
+                    <p>Ujjain</p>
+                    <p>Uluberia</p>
+                    <p>Una</p>
+                    <p>Unnao</p>
+                    <p>Vadodara</p>
+                    <p>Valsad</p>
+                    <p>Vapi</p>
+                    <p>Varanasi</p>
+                    <p>Vellore</p>
+                    <p>Veraval</p>
+                    <p>Vidisha</p>
+                    <p>Vijayawada</p>
+                    <p>Viluppuram</p>
+                    <p>Virudhunagar</p>
+                    <p>Vizag</p>
+                    <p>Vizianagaram</p>
+                    <p>Vyara</p>
+                    <p>Waidhan</p>
+                    <p>Warangal</p>
+                    <p>Wardha</p>
+                    <p>Washim</p>
+                    <p>Wayanad</p>
+                    <p>Yamuna-Nagar</p>
+                    <p>vksmtd</p>
+                </div>
+            </div>
+            <div class="footer3">
+                <div class="bestplaces">
+                    <h3>BEST PLACES TO EAT ACROSS CITIES</h3>
+                </div>
+                <div class="bestplaces1">
+                    <p>Best Restaurants In Abohar</p>
+                    <p>Best Restaurants In Adilabad</p>
+                    <p>Best Restaurants In Adoni</p>
+                    <p>Best Restaurants In Agra</p>
+                    <p>Best Restaurants In Ahmedabad</p>
+                    <p>Best Restaurants In Ahmednagar</p>
+                    <p>Best Restaurants In Aizawl</p>
+                    <p>Best Restaurants In Ajmer</p>
+                    <p>Best Restaurants In Akola</p>
+                    <p>Best Restaurants In Alappuzha</p>
+                    <p>Best Restaurants In Aligarh</p>
+                    <p>Best Restaurants In Alipurduar</p>
+                    <p>Best Restaurants In Allahabad</p>
+                    <p>Best Restaurants In Almora</p>
+                    <p>Best Restaurants In Alwar</p>
+                    <p>Best Restaurants In Ambajogai</p>
+                    <p>Best Restaurants In Ambala</p>
+                    <p>Best Restaurants In Ambikapur</p>
+                    <p>Best Restaurants In Ambur</p>
+                    <p>Best Restaurants In Amravati</p>
+                    <p>Best Restaurants In Amreli</p>
+                    <p>Best Restaurants In Amritsar</p>
+                    <p>Best Restaurants In Anand</p>
+                    <p>Best Restaurants In Anantapur</p>
+                    <p>Best Restaurants In Ankleshwar</p>
+                    <p>Best Restaurants In Arakkonam</p>
+                    <p>Best Restaurants In Arambagh</p>
+                    <p>Best Restaurants In Araria</p>
+                    <p>Best Restaurants In Arrah</p>
+                    <p>Best Restaurants In Asansol</p>
+                    <p>Best Restaurants In Aurangabad</p>
+                    <p>Best Restaurants In Aurangabadbihar</p>
+                    <p>Best Restaurants In Azamgarh</p>
+                    <p>Best Restaurants In Baddi</p>
+                    <p>Best Restaurants In Bagalkot</p>
+                    <p>Best Restaurants In Bagdogra</p>
+                    <p>Best Restaurants In Bahadurgarh</p>
+                    <p>Best Restaurants In Bahraich</p>
+                    <p>Best Restaurants In Balaghat</p>
+                    <p>Best Restaurants In Balangir</p>
+                    <p>Best Restaurants In Balasore</p>
+                    <p>Best Restaurants In Ballari</p>
+                    <p>Best Restaurants In Ballia</p>
+                    <p>Best Restaurants In Balrampur</p>
+                    <p>Best Restaurants In Balurghat</p>
+                    <p>Best Restaurants In Banda</p>
+                    <p>Best Restaurants In Bangalore</p>
+                    <p>Best Restaurants In Bantwal</p>
+                    <p>Best Restaurants In Baramati</p>
+                    <p>Best Restaurants In Baran</p>
+                    <p>Best Restaurants In Bardhaman</p>
+                    <p>Best Restaurants In Bardoli</p>
+                    <p>Best Restaurants In Bareilly</p>
+                    <p>Best Restaurants In Barh</p>
+                    <p>Best Restaurants In Baripada</p>
+                    <p>Best Restaurants In Barmer</p>
+                    <p>Best Restaurants In Barnala</p>
+                    <p>Best Restaurants In Barshi</p>
+                    <p>Best Restaurants In Basirhat</p>
+                    <p>Best Restaurants In Basti</p>
+                    <p>Best Restaurants In Batala</p>
+                    <p>Best Restaurants In Bathinda</p>
+                    <p>Best Restaurants In Beawar</p>
+                    <p>Best Restaurants In Beed</p>
+                    <p>Best Restaurants In Begusarai</p>
+                    <p>Best Restaurants In Bela-Pratapgarh</p>
+                    <p>Best Restaurants In Belgaum</p>
+                    <p>Best Restaurants In Berhampore</p>
+                    <p>Best Restaurants In Berhampur</p>
+                    <p>Best Restaurants In Bettiah</p>
+                    <p>Best Restaurants In Betul</p>
+                    <p>Best Restaurants In Bhadohi</p>
+                    <p>Best Restaurants In Bhadrachalam</p>
+                    <p>Best Restaurants In Bhadrak</p>
+                    <p>Best Restaurants In Bhadravati</p>
+                    <p>Best Restaurants In Bhagalpur</p>
+                    <p>Best Restaurants In Bhandara</p>
+                    <p>Best Restaurants In Bharabanki</p>
+                    <p>Best Restaurants In Bharatpur</p>
+                    <p>Best Restaurants In Bharuch</p>
+                    <p>Best Restaurants In Bhatkal</p>
+                    <p>Best Restaurants In Bhavnagar</p>
+                    <p>Best Restaurants In Bhawanipatna</p>
+                    <p>Best Restaurants In Bhilai</p>
+                    <p>Best Restaurants In Bhilwara</p>
+                    <p>Best Restaurants In Bhimavaram</p>
+                    <p>Best Restaurants In Bhind</p>
+                    <p>Best Restaurants In Bhiwadi</p>
+                    <p>Best Restaurants In Bhiwani</p>
+                    <p>Best Restaurants In Bhopal</p>
+                    <p>Best Restaurants In Bhubaneswar</p>
+                    <p>Best Restaurants In Bhuj</p>
+                    <p>Best Restaurants In Bhusawal</p>
+                    <p>Best Restaurants In Bidar</p>
+                    <p>Best Restaurants In Biharsharif</p>
+                    <p>Best Restaurants In Bijapur</p>
+                    <p>Best Restaurants In Bijnor</p>
+                    <p>Best Restaurants In Bikaner</p>
+                    <p>Best Restaurants In Bilaspur</p>
+                    <p>Best Restaurants In Bilimora</p>
+                    <p>Best Restaurants In Biswanath-Chariali</p>
+                    <p>Best Restaurants In Bodhan-Rural</p>
+                    <p>Best Restaurants In Bodinayakanur</p>
+                    <p>Best Restaurants In Boisar</p>
+                    <p>Best Restaurants In Bolpur</p>
+                    <p>Best Restaurants In Bongaigaon</p>
+                    <p>Best Restaurants In Bongaon</p>
+                    <p>Best Restaurants In Budaun</p>
+                    <p>Best Restaurants In Budhwal</p>
+                    <p>Best Restaurants In Bulandshahr</p>
+                    <p>Best Restaurants In Buldana</p>
+                    <p>Best Restaurants In Bundi</p>
+                    <p>Best Restaurants In Burhanpur</p>
+                    <p>Best Restaurants In Buxar</p>
+                    <p>Best Restaurants In Central-Goa</p>
+                    <p>Best Restaurants In Chaibasa</p>
+                    <p>Best Restaurants In Chakdaha</p>
+                    <p>Best Restaurants In Chalisgaon</p>
+                    <p>Best Restaurants In Chandausi</p>
+                    <p>Best Restaurants In Chandigarh</p>
+                    <p>Best Restaurants In Chandrapur</p>
+                    <p>Best Restaurants In Chennai</p>
+                    <p>Best Restaurants In Chhapra</p>
+                    <p>Best Restaurants In Chhatarpur</p>
+                    <p>Best Restaurants In Chhindwara</p>
+                    <p>Best Restaurants In Chidambaram</p>
+                    <p>Best Restaurants In Chikhli</p>
+                    <p>Best Restaurants In Chikkaballapur</p>
+                    <p>Best Restaurants In Chikmagalur</p>
+                    <p>Best Restaurants In Chiplun</p>
+                    <p>Best Restaurants In Chitradurga</p>
+                    <p>Best Restaurants In Chittoor</p>
+                    <p>Best Restaurants In Chittorgarh</p>
+                    <p>Best Restaurants In Churu</p>
+                    <p>Best Restaurants In Coimbatore</p>
+                    <p>Best Restaurants In Cooch-Behar</p>
+                    <p>Best Restaurants In Cuddalore</p>
+                    <p>Best Restaurants In Cuttack</p>
+                    <p>Best Restaurants In Dahanu</p>
+                    <p>Best Restaurants In Dahod</p>
+                    <p>Best Restaurants In Daltonganj</p>
+                    <p>Best Restaurants In Daman</p>
+                    <p>Best Restaurants In Darbhanga</p>
+                    <p>Best Restaurants In Darjeeling</p>
+                    <p>Best Restaurants In Dasuya</p>
+                    <p>Best Restaurants In Dausa</p>
+                    <p>Best Restaurants In Davanagere</p>
+                    <p>Best Restaurants In Dehradun</p>
+                    <p>Best Restaurants In Dehri</p>
+                </div>
+                <div class="bestplaces2">
+                    <p>Best Restaurants In Delhi</p>
+                    <p>Best Restaurants In Deoghar</p>
+                    <p>Best Restaurants In Deoria-City</p>
+                    <p>Best Restaurants In Dewas</p>
+                    <p>Best Restaurants In Dhanbad</p>
+                    <p>Best Restaurants In Dhar</p>
+                    <p>Best Restaurants In Dharamshala</p>
+                    <p>Best Restaurants In Dharapuram</p>
+                    <p>Best Restaurants In Dharmapuri</p>
+                    <p>Best Restaurants In Dharwad</p>
+                    <p>Best Restaurants In Dholpur</p>
+                    <p>Best Restaurants In Dhule</p>
+                    <p>Best Restaurants In Dibrugarh</p>
+                    <p>Best Restaurants In Digboi</p>
+                    <p>Best Restaurants In Dimapur</p>
+                    <p>Best Restaurants In Dindigul</p>
+                    <p>Best Restaurants In Diu</p>
+                    <p>Best Restaurants In Doddaballapura</p>
+                    <p>Best Restaurants In Duliajan</p>
+                    <p>Best Restaurants In Dumka</p>
+                    <p>Best Restaurants In Dungarpur</p>
+                    <p>Best Restaurants In Durgapur</p>
+                    <p>Best Restaurants In Eluru</p>
+                    <p>Best Restaurants In Erode</p>
+                    <p>Best Restaurants In Etah</p>
+                    <p>Best Restaurants In Etawah</p>
+                    <p>Best Restaurants In Faizabad</p>
+                    <p>Best Restaurants In Faridabad</p>
+                    <p>Best Restaurants In Faridkot</p>
+                    <p>Best Restaurants In Farrukhabad</p>
+                    <p>Best Restaurants In Fatehabad</p>
+                    <p>Best Restaurants In Fatehgarh-Sahib</p>
+                    <p>Best Restaurants In Fatehpur</p>
+                    <p>Best Restaurants In Fazilka</p>
+                    <p>Best Restaurants In Firozabad</p>
+                    <p>Best Restaurants In Firozpur</p>
+                    <p>Best Restaurants In Gadag-Betigeri</p>
+                    <p>Best Restaurants In Gadwal</p>
+                    <p>Best Restaurants In Gandhidham</p>
+                    <p>Best Restaurants In Gangapur-City</p>
+                    <p>Best Restaurants In Gangarampur</p>
+                    <p>Best Restaurants In Gangtok</p>
+                    <p>Best Restaurants In Gauriganj</p>
+                    <p>Best Restaurants In Gaya</p>
+                    <p>Best Restaurants In Ghazipur</p>
+                    <p>Best Restaurants In Giridih</p>
+                    <p>Best Restaurants In Godhra</p>
+                    <p>Best Restaurants In Gokak</p>
+                    <p>Best Restaurants In Golaghat</p>
+                    <p>Best Restaurants In Gonda</p>
+                    <p>Best Restaurants In Gondia</p>
+                    <p>Best Restaurants In Gopalganj</p>
+                    <p>Best Restaurants In Gorakhpur</p>
+                    <p>Best Restaurants In Gudivada</p>
+                    <p>Best Restaurants In Gudur</p>
+                    <p>Best Restaurants In Guna</p>
+                    <p>Best Restaurants In Guntakal</p>
+                    <p>Best Restaurants In Guntur</p>
+                    <p>Best Restaurants In Gurdaspur</p>
+                    <p>Best Restaurants In Gurgaon</p>
+                    <p>Best Restaurants In Guwahati</p>
+                    <p>Best Restaurants In Gwalior</p>
+                    <p>Best Restaurants In Habra</p>
+                    <p>Best Restaurants In Hajipur</p>
+                    <p>Best Restaurants In Haldia</p>
+                    <p>Best Restaurants In Haldwani</p>
+                    <p>Best Restaurants In Halol</p>
+                    <p>Best Restaurants In Hamirpur</p>
+                    <p>Best Restaurants In Hampi</p>
+                    <p>Best Restaurants In Hansi</p>
+                    <p>Best Restaurants In Hanumangarh</p>
+                    <p>Best Restaurants In Hapur</p>
+                    <p>Best Restaurants In Hardoi</p>
+                    <p>Best Restaurants In Haridwar</p>
+                    <p>Best Restaurants In Hassan</p>
+                    <p>Best Restaurants In Hathras</p>
+                    <p>Best Restaurants In Haveri</p>
+                    <p>Best Restaurants In Himmatnagar</p>
+                    <p>Best Restaurants In Hisar</p>
+                    <p>Best Restaurants In Hojai</p>
+                    <p>Best Restaurants In Hoshangabad</p>
+                    <p>Best Restaurants In Hoshiarpur</p>
+                    <p>Best Restaurants In Hospet</p>
+                    <p>Best Restaurants In Hosur</p>
+                    <p>Best Restaurants In Hubli</p>
+                    <p>Best Restaurants In Hyderabad</p>
+                    <p>Best Restaurants In Ichalkaranji</p>
+                    <p>Best Restaurants In Imphal</p>
+                    <p>Best Restaurants In Indore</p>
+                    <p>Best Restaurants In Itanagar</p>
+                    <p>Best Restaurants In Itarsi</p>
+                    <p>Best Restaurants In Jabalpur</p>
+                    <p>Best Restaurants In Jagdalpur</p>
+                    <p>Best Restaurants In Jagraon</p>
+                    <p>Best Restaurants In Jagtial</p>
+                    <p>Best Restaurants In Jahanabad</p>
+                    <p>Best Restaurants In Jaipur</p>
+                    <p>Best Restaurants In Jalandhar</p>
+                    <p>Best Restaurants In Jalgaon</p>
+                    <p>Best Restaurants In Jalna</p>
+                    <p>Best Restaurants In Jalpaiguri</p>
+                    <p>Best Restaurants In Jammu</p>
+                    <p>Best Restaurants In Jamnagar</p>
+                    <p>Best Restaurants In Jamui</p>
+                    <p>Best Restaurants In Jangipur</p>
+                    <p>Best Restaurants In Jaunpur</p>
+                    <p>Best Restaurants In Jhalawar</p>
+                    <p>Best Restaurants In Jhansi</p>
+                    <p>Best Restaurants In Jhargram</p>
+                    <p>Best Restaurants In Jharsuguda</p>
+                    <p>Best Restaurants In Jhunjhunu</p>
+                    <p>Best Restaurants In Jind</p>
+                    <p>Best Restaurants In Jjajjar</p>
+                    <p>Best Restaurants In Jodhpur</p>
+                    <p>Best Restaurants In Jorhat</p>
+                    <p>Best Restaurants In Junagadh</p>
+                    <p>Best Restaurants In Kadapa</p>
+                    <p>Best Restaurants In Kadayanallur</p>
+                    <p>Best Restaurants In Kadiri</p>
+                    <p>Best Restaurants In Kaithal</p>
+                    <p>Best Restaurants In Kakinada</p>
+                    <p>Best Restaurants In Kalaburagi</p>
+                    <p>Best Restaurants In Kamareddy</p>
+                    <p>Best Restaurants In Kanchrapara</p>
+                    <p>Best Restaurants In Kannauj</p>
+                    <p>Best Restaurants In Kannur</p>
+                    <p>Best Restaurants In Kanpur</p>
+                    <p>Best Restaurants In Kanyakumari</p>
+                    <p>Best Restaurants In Kapurthala</p>
+                    <p>Best Restaurants In Karad</p>
+                    <p>Best Restaurants In Karaikal</p>
+                    <p>Best Restaurants In Karaikkudi</p>
+                    <p>Best Restaurants In Karimnagar</p>
+                    <p>Best Restaurants In Karnal</p>
+                    <p>Best Restaurants In Karur</p>
+                    <p>Best Restaurants In Karwar</p>
+                    <p>Best Restaurants In Kashipur</p>
+                    <p>Best Restaurants In Katihar</p>
+                    <p>Best Restaurants In Katni</p>
+                    <p>Best Restaurants In Kavali</p>
+                    <p>Best Restaurants In Kayamkulam</p>
+                    <p>Best Restaurants In Kendrapada</p>
+                    <p>Best Restaurants In Kendujhar</p>
+                    <p>Best Restaurants In Khagaria</p>
+                    <p>Best Restaurants In Khalilabad</p>
+                    <p>Best Restaurants In Khamgaon</p>
+                    <p>Best Restaurants In Khammam</p>
+                    <p>Best Restaurants In Khandwa</p>
+                    <p>Best Restaurants In Khanna</p>
+                </div>
+                <div class="bestplaces3">
+                    <p>Best Restaurants In Kharagpur</p>
+                    <p>Best Restaurants In Kishanganj</p>
+                    <p>Best Restaurants In Kishangarh</p>
+                    <p>Best Restaurants In Kochi</p>
+                    <p>Best Restaurants In Kohima</p>
+                    <p>Best Restaurants In Kokrajhar</p>
+                    <p>Best Restaurants In Kolar</p>
+                    <p>Best Restaurants In Kolhapur</p>
+                    <p>Best Restaurants In Kolkata</p>
+                    <p>Best Restaurants In Kollam</p>
+                    <p>Best Restaurants In Koppal</p>
+                    <p>Best Restaurants In Korba</p>
+                    <p>Best Restaurants In Kota</p>
+                    <p>Best Restaurants In Kotdwar</p>
+                    <p>Best Restaurants In Kothagudem</p>
+                    <p>Best Restaurants In Kottarakkara</p>
+                    <p>Best Restaurants In Kottayam</p>
+                    <p>Best Restaurants In Kovilpatti</p>
+                    <p>Best Restaurants In Kozhikode</p>
+                    <p>Best Restaurants In Krishnagiri</p>
+                    <p>Best Restaurants In Krishnanagar</p>
+                    <p>Best Restaurants In Kullu</p>
+                    <p>Best Restaurants In Kumbakonam</p>
+                    <p>Best Restaurants In Kurnool</p>
+                    <p>Best Restaurants In Kurukshetra</p>
+                    <p>Best Restaurants In Kushalnagar</p>
+                    <p>Best Restaurants In Lakhimpur</p>
+                    <p>Best Restaurants In Lalitpur</p>
+                    <p>Best Restaurants In Latur</p>
+                    <p>Best Restaurants In Lonavla</p>
+                    <p>Best Restaurants In Lpu-Phagwara</p>
+                    <p>Best Restaurants In Lucknow</p>
+                    <p>Best Restaurants In Ludhiana</p>
+                    <p>Best Restaurants In Machilipatnam</p>
+                    <p>Best Restaurants In Madanapalle</p>
+                    <p>Best Restaurants In Madhubani</p>
+                    <p>Best Restaurants In Madikeri</p>
+                    <p>Best Restaurants In Madurai</p>
+                    <p>Best Restaurants In Mahbubnagar</p>
+                    <p>Best Restaurants In Mahoba</p>
+                    <p>Best Restaurants In Mainpuri</p>
+                    <p>Best Restaurants In Malappuram</p>
+                    <p>Best Restaurants In Malda</p>
+                    <p>Best Restaurants In Malegaon</p>
+                    <p>Best Restaurants In Malout</p>
+                    <p>Best Restaurants In Manali</p>
+                    <p>Best Restaurants In Mancherial</p>
+                    <p>Best Restaurants In Mandapeta</p>
+                    <p>Best Restaurants In Mandi-Dabwali</p>
+                    <p>Best Restaurants In Mandi-Gobindgarh</p>
+                    <p>Best Restaurants In Mandsaur</p>
+                    <p>Best Restaurants In Mandya</p>
+                    <p>Best Restaurants In Mangaluru</p>
+                    <p>Best Restaurants In Manipal</p>
+                    <p>Best Restaurants In Mansa</p>
+                    <p>Best Restaurants In Markapur</p>
+                    <p>Best Restaurants In Mathura</p>
+                    <p>Best Restaurants In Maunath-Bhanjan</p>
+                    <p>Best Restaurants In Mayiladuthurai</p>
+                    <p>Best Restaurants In Medinipur</p>
+                    <p>Best Restaurants In Meerut</p>
+                    <p>Best Restaurants In Mehsana</p>
+                    <p>Best Restaurants In Mettupalayam</p>
+                    <p>Best Restaurants In Miryalaguda</p>
+                    <p>Best Restaurants In Mirzapur</p>
+                    <p>Best Restaurants In Modinagar</p>
+                    <p>Best Restaurants In Moga</p>
+                    <p>Best Restaurants In Moradabad</p>
+                    <p>Best Restaurants In Morbi</p>
+                    <p>Best Restaurants In Morena</p>
+                    <p>Best Restaurants In Motihari</p>
+                    <p>Best Restaurants In Mount-Abu</p>
+                    <p>Best Restaurants In Mughalsarai</p>
+                    <p>Best Restaurants In Mukerian</p>
+                    <p>Best Restaurants In Muktsar</p>
+                    <p>Best Restaurants In Mumbai</p>
+                    <p>Best Restaurants In Munger</p>
+                    <p>Best Restaurants In Mussoorie</p>
+                    <p>Best Restaurants In Muzaffarnagar</p>
+                    <p>Best Restaurants In Muzaffarpur</p>
+                    <p>Best Restaurants In Mysore</p>
+                    <p>Best Restaurants In Nabadwip</p>
+                    <p>Best Restaurants In Nabha</p>
+                    <p>Best Restaurants In Nadiad</p>
+                    <p>Best Restaurants In Nagaon</p>
+                    <p>Best Restaurants In Nagapattinam</p>
+                    <p>Best Restaurants In Nagda</p>
+                    <p>Best Restaurants In Nagercoil</p>
+                    <p>Best Restaurants In Nagpur</p>
+                    <p>Best Restaurants In Naharlagun</p>
+                    <p>Best Restaurants In Nainital</p>
+                    <p>Best Restaurants In Nakodar</p>
+                    <p>Best Restaurants In Nalbari</p>
+                    <p>Best Restaurants In Nalgonda</p>
+                    <p>Best Restaurants In Namakkal</p>
+                    <p>Best Restaurants In Nanded</p>
+                    <p>Best Restaurants In Nandurbar</p>
+                    <p>Best Restaurants In Nandyal</p>
+                    <p>Best Restaurants In Nangal</p>
+                    <p>Best Restaurants In Naraingarh</p>
+                    <p>Best Restaurants In Narasaraopet</p>
+                    <p>Best Restaurants In Narnaul</p>
+                    <p>Best Restaurants In Narsinghpur</p>
+                    <p>Best Restaurants In Nashik</p>
+                    <p>Best Restaurants In Navsari</p>
+                    <p>Best Restaurants In Neemuch</p>
+                    <p>Best Restaurants In Nellore</p>
+                    <p>Best Restaurants In Neyveli</p>
+                    <p>Best Restaurants In Nirmal</p>
+                    <p>Best Restaurants In Nizamabad</p>
+                    <p>Best Restaurants In Noida</p>
+                    <p>Best Restaurants In Noida-1</p>
+                    <p>Best Restaurants In North-Lakhimpur</p>
+                    <p>Best Restaurants In Ongole</p>
+                    <p>Best Restaurants In Ooty</p>
+                    <p>Best Restaurants In Orai</p>
+                    <p>Best Restaurants In Osmanabad</p>
+                    <p>Best Restaurants In Palakkad</p>
+                    <p>Best Restaurants In Palakollu</p>
+                    <p>Best Restaurants In Palampur</p>
+                    <p>Best Restaurants In Palani</p>
+                    <p>Best Restaurants In Palanpur</p>
+                    <p>Best Restaurants In Palghar</p>
+                    <p>Best Restaurants In Pali</p>
+                    <p>Best Restaurants In Palwal</p>
+                    <p>Best Restaurants In Panipat</p>
+                    <p>Best Restaurants In Paradeep</p>
+                    <p>Best Restaurants In Paramakudi</p>
+                    <p>Best Restaurants In Parbhani</p>
+                    <p>Best Restaurants In Parvathipuram</p>
+                    <p>Best Restaurants In Pathankot</p>
+                    <p>Best Restaurants In Patiala</p>
+                    <p>Best Restaurants In Patna</p>
+                    <p>Best Restaurants In Pattukkottai</p>
+                    <p>Best Restaurants In Perambalur</p>
+                    <p>Best Restaurants In Phagwara</p>
+                    <p>Best Restaurants In Piler</p>
+                    <p>Best Restaurants In Pilibhit</p>
+                    <p>Best Restaurants In Pilkhuwa</p>
+                    <p>Best Restaurants In Pinjore-City</p>
+                    <p>Best Restaurants In Pondicherry</p>
+                    <p>Best Restaurants In Porbandar</p>
+                    <p>Best Restaurants In Port-Blair</p>
+                    <p>Best Restaurants In Pratapgarh</p>
+                    <p>Best Restaurants In Proddatur</p>
+                    <p>Best Restaurants In Pudukkottai</p>
+                    <p>Best Restaurants In Pune</p>
+                    <p>Best Restaurants In Puri</p>
+                    <p>Best Restaurants In Purnea</p>
+                </div>
+                <div class="bestplaces4">
+                    <p>Best Restaurants In Purulia</p>
+                    <p>Best Restaurants In Pusad</p>
+                    <p>Best Restaurants In Puttur</p>
+                    <p>Best Restaurants In Rae-Bareli</p>
+                    <p>Best Restaurants In Raghunathpur</p>
+                    <p>Best Restaurants In Raichur</p>
+                    <p>Best Restaurants In Raiganj</p>
+                    <p>Best Restaurants In Raigarh</p>
+                    <p>Best Restaurants In Raipur</p>
+                    <p>Best Restaurants In Rajahmundry</p>
+                    <p>Best Restaurants In Rajampet</p>
+                    <p>Best Restaurants In Rajapalayam</p>
+                    <p>Best Restaurants In Rajgarh</p>
+                    <p>Best Restaurants In Rajkot</p>
+                    <p>Best Restaurants In Rajnandgaon</p>
+                    <p>Best Restaurants In Rajsamand</p>
+                    <p>Best Restaurants In Ramagundam</p>
+                    <p>Best Restaurants In Ramanagara</p>
+                    <p>Best Restaurants In Ramanathapuram</p>
+                    <p>Best Restaurants In Ramgarh</p>
+                    <p>Best Restaurants In Rampur</p>
+                    <p>Best Restaurants In Ranaghat-Wb</p>
+                    <p>Best Restaurants In Ranchi</p>
+                    <p>Best Restaurants In Rangia</p>
+                    <p>Best Restaurants In Rangpo</p>
+                    <p>Best Restaurants In Ranibennur</p>
+                    <p>Best Restaurants In Raniganj</p>
+                    <p>Best Restaurants In Ratlam</p>
+                    <p>Best Restaurants In Ratnagiri</p>
+                    <p>Best Restaurants In Ravulapalem</p>
+                    <p>Best Restaurants In Rayachoty</p>
+                    <p>Best Restaurants In Rayagada</p>
+                    <p>Best Restaurants In Rewa</p>
+                    <p>Best Restaurants In Rewari</p>
+                    <p>Best Restaurants In Rishikesh</p>
+                    <p>Best Restaurants In Roha</p>
+                    <p>Best Restaurants In Rohtak</p>
+                    <p>Best Restaurants In Roorkee</p>
+                    <p>Best Restaurants In Ropar</p>
+                    <p>Best Restaurants In Rourkela</p>
+                    <p>Best Restaurants In Rudrapur</p>
+                    <p>Best Restaurants In Sagar</p>
+                    <p>Best Restaurants In Saharanpur</p>
+                    <p>Best Restaurants In Saharsa</p>
+                    <p>Best Restaurants In Salem</p>
+                    <p>Best Restaurants In Samastipur</p>
+                    <p>Best Restaurants In Sambalpur</p>
+                    <p>Best Restaurants In Sangamner</p>
+                    <p>Best Restaurants In Sangli</p>
+                    <p>Best Restaurants In Sangrur</p>
+                    <p>Best Restaurants In Sankarankoil</p>
+                    <p>Best Restaurants In Santipur</p>
+                    <p>Best Restaurants In Sasaram</p>
+                    <p>Best Restaurants In Satara</p>
+                    <p>Best Restaurants In Satna</p>
+                    <p>Best Restaurants In Sawai-Madhopur</p>
+                    <p>Best Restaurants In Sehore</p>
+                    <p>Best Restaurants In Shahjahanpur</p>
+                    <p>Best Restaurants In Shamli</p>
+                    <p>Best Restaurants In Shikohabad</p>
+                    <p>Best Restaurants In Shillong</p>
+                    <p>Best Restaurants In Shimla</p>
+                    <p>Best Restaurants In Shirdi-City</p>
+                    <p>Best Restaurants In Shivamogga</p>
+                    <p>Best Restaurants In Shivpuri</p>
+                    <p>Best Restaurants In Siddipet</p>
+                    <p>Best Restaurants In Sikar</p>
+                    <p>Best Restaurants In Silchar</p>
+                    <p>Best Restaurants In Siliguri</p>
+                    <p>Best Restaurants In Silvassa</p>
+                    <p>Best Restaurants In Sindhanur</p>
+                    <p>Best Restaurants In Singrauli</p>
+                    <p>Best Restaurants In Sirkali</p>
+                    <p>Best Restaurants In Sirsa</p>
+                    <p>Best Restaurants In Sirsi</p>
+                    <p>Best Restaurants In Sitamarhi</p>
+                    <p>Best Restaurants In Sitapur</p>
+                    <p>Best Restaurants In Sivakasi</p>
+                    <p>Best Restaurants In Sivasagar</p>
+                    <p>Best Restaurants In Siwan</p>
+                    <p>Best Restaurants In Solan</p>
+                    <p>Best Restaurants In Solapur</p>
+                    <p>Best Restaurants In Sonipat</p>
+                    <p>Best Restaurants In Sri-Ganganagar</p>
+                    <p>Best Restaurants In Srikakulam</p>
+                    <p>Best Restaurants In Srivilliputhur</p>
+                    <p>Best Restaurants In Sullurpeta</p>
+                    <p>Best Restaurants In Sultanpur</p>
+                    <p>Best Restaurants In Sulthan-Bathery</p>
+                    <p>Best Restaurants In Surat</p>
+                    <p>Best Restaurants In Suratgarh</p>
+                    <p>Best Restaurants In Surendranagar- Dudhrej</p>
+                    <p>Best Restaurants In Suri</p>
+                    <p>Best Restaurants In Suryapet</p>
+                    <p>Best Restaurants In Tadepalligudem</p>
+                    <p>Best Restaurants In Tadpatri</p>
+                    <p>Best Restaurants In Tanuku</p>
+                    <p>Best Restaurants In Tarn-Taran-Sahib</p>
+                    <p>Best Restaurants In Tenkasi</p>
+                    <p>Best Restaurants In Tezpur</p>
+                    <p>Best Restaurants In Thanjavur</p>
+                    <p>Best Restaurants In Theni</p>
+                    <p>Best Restaurants In Thiruvalla</p>
+                    <p>Best Restaurants In Thiruvallur</p>
+                    <p>Best Restaurants In Thiruvananthapuram</p>
+                    <p>Best Restaurants In Thiruvarur</p>
+                    <p>Best Restaurants In Thodupuzha</p>
+                    <p>Best Restaurants In Thoothukudi</p>
+                    <p>Best Restaurants In Thrissur</p>
+                    <p>Best Restaurants In Tindivanam</p>
+                    <p>Best Restaurants In Tinsukia</p>
+                    <p>Best Restaurants In Tiptur</p>
+                    <p>Best Restaurants In Tirunelveli</p>
+                    <p>Best Restaurants In Tirupati</p>
+                    <p>Best Restaurants In Tirupattur</p>
+                    <p>Best Restaurants In Tirupur</p>
+                    <p>Best Restaurants In Tiruttani</p>
+                    <p>Best Restaurants In Tiruvannamalai</p>
+                    <p>Best Restaurants In Tohana</p>
+                    <p>Best Restaurants In Trichy</p>
+                    <p>Best Restaurants In Tumakuru</p>
+                    <p>Best Restaurants In Tuni</p>
+                    <p>Best Restaurants In Udgir</p>
+                    <p>Best Restaurants In Udumalaipettai</p>
+                    <p>Best Restaurants In Ujjain</p>
+                    <p>Best Restaurants In Uluberia</p>
+                    <p>Best Restaurants In Una</p>
+                    <p>Best Restaurants In Unnao</p>
+                    <p>Best Restaurants In Vadodara</p>
+                    <p>Best Restaurants In Valsad</p>
+                    <p>Best Restaurants In Vapi</p>
+                    <p>Best Restaurants In Varanasi</p>
+                    <p>Best Restaurants In Vellore</p>
+                    <p>Best Restaurants In Veraval</p>
+                    <p>Best Restaurants In Vidisha</p>
+                    <p>Best Restaurants In Vijayawada</p>
+                    <p>Best Restaurants In Viluppuram</p>
+                    <p>Best Restaurants In Virudhunagar</p>
+                    <p>Best Restaurants In Vizag</p>
+                    <p>Best Restaurants In Vizianagaram</p>
+                    <p>Best Restaurants In Vyara</p>
+                    <p>Best Restaurants In Waidhan</p>
+                    <p>Best Restaurants In Warangal</p>
+                    <p>Best Restaurants In Wardha</p>
+                    <p>Best Restaurants In Washim</p>
+                    <p>Best Restaurants In Wayanad</p>
+                    <p>Best Restaurants In Yamuna-Nagar</p>
+                    <p>Best Restaurants In Yavatmal</p>
+                </div>
+            </div>
+            <div class="footer4">
+                <div class="cuisines">
+                    <h3>BEST CUISINES NEAR ME</h3>
+                </div>
+                <div class="cuisines1">
+                    <p>Afghani Restaurant Near Me</p>
+                    <p>American Restaurant Near Me</p>
+                    <p>Andhra Restaurant Near Me</p>
+                    <p>Arabian Restaurant Near Me</p>
+                    <p>Asian Restaurant Near Me</p>
+                    <p>Assamese Restaurant Near Me</p>
+                    <p>Awadhi Restaurant Near Me</p>
+                    <p>Bakery Restaurant Near Me</p>
+                    <p>Barbecue Restaurant Near Me</p>
+                    <p>Bengali Restaurant Near Me</p>
+                    <p>Beverages Restaurant Near Me</p>
+                    <p>Biryani Restaurant Near Me</p>
+                    <p>British Restaurant Near Me</p>
+                    <p>Buffalo Meat Restaurant Near Me</p>
+                    <p>Burgers Restaurant Near Me</p>
+                    <p>Burmese Restaurant Near Me</p>
+                    <p>Cafe Restaurant Near Me</p>
+                    <p>Chaat Restaurant Near Me</p>
+                    <p>Chettinad Restaurant Near Me</p>
+                    <p>Chinese Restaurant Near Me</p>
+                    <p>Coastal Restaurant Near Me</p>
+                    <p>Combo Restaurant Near Me</p>
+                    <p>Continental Restaurant Near Me</p>
+                    <p>Desserts Restaurant Near Me</p>
+                </div>
+                <div class="cuisines2">
+                    <p>European Restaurant Near Me</p>
+                    <p>Fast Food Restaurant Near Me</p>
+                    <p>French Restaurant Near Me</p>
+                    <p>Goan Restaurant Near Me</p>
+                    <p>Greek Restaurant Near Me</p>
+                    <p>Grill Restaurant Near Me</p>
+                    <p>Gujarati Restaurant Near Me</p>
+                    <p>Haleem Restaurant Near Me</p>
+                    <p>Healthy Food Restaurant Near Me</p>
+                    <p>Home Food Restaurant Near Me</p>
+                    <p>Hyderabadi Restaurant Near Me</p>
+                    <p>Ice Cream Restaurant Near Me</p>
+                    <p>Ice Cream Cakes Restaurant Near Me</p>
+                    <p>Indian Restaurant Near Me</p>
+                    <p>Indonesian Restaurant Near Me</p>
+                    <p>Italian Restaurant Near Me</p>
+                    <p>Italian-American Restaurant Near Me</p>
+                    <p>Jain Restaurant Near Me</p>
+                    <p>Japanese Restaurant Near Me</p>
+                    <p>Juices Restaurant Near Me</p>
+                    <p>Kashmiri Restaurant Near Me</p>
+                    <p>Kebabs Restaurant Near Me</p>
+                    <p>Kerala Restaurant Near Me</p>
+                    <p>Keto Restaurant Near Me</p>
+                </div>
+                <div class="cuisines3">
+                    <p>Konkan Restaurant Near Me</p>
+                    <p>Korean Restaurant Near Me</p>
+                    <p>Lebanese Restaurant Near Me</p>
+                    <p>Lucknowi Restaurant Near Me</p>
+                    <p>Maharashtrian Restaurant Near Me</p>
+                    <p>Malaysian Restaurant Near Me</p>
+                    <p>Mangalorean Restaurant Near Me</p>
+                    <p>Meat Restaurant Near Me</p>
+                    <p>Mediterranean Restaurant Near Me</p>
+                    <p>Mexican Restaurant Near Me</p>
+                    <p>Middle Eastern Restaurant Near Me</p>
+                    <p>Mughlai Restaurant Near Me</p>
+                    <p>Naga Restaurant Near Me</p>
+                    <p>Nepalese Restaurant Near Me</p>
+                    <p>North Eastern Restaurant Near Me</p>
+                    <p>North Indian Restaurant Near Me</p>
+                    <p>Oriental Restaurant Near Me</p>
+                    <p>Oriya Restaurant Near Me</p>
+                    <p>Paan Restaurant Near Me</p>
+                    <p>Pan-Asian Restaurant Near Me</p>
+                    <p>Parsi Restaurant Near Me</p>
+                    <p>Pastas Restaurant Near Me</p>
+                    <p>Persian Restaurant Near Me</p>
+                    <p>Pizzas Restaurant Near Me</p>
+                </div>
+                <div class="cuisines4">
+                    <p>Portuguese Restaurant Near Me</p>
+                    <p>Punjabi Restaurant Near Me</p>
+                    <p>Raja Restaurant Near Me</p>
+                    <p>Rajasthani Restaurant Near Me</p>
+                    <p>Salads Restaurant Near Me</p>
+                    <p>Seafood Restaurant Near Me</p>
+                    <p>Sindhi Restaurant Near Me</p>
+                    <p>Singaporean Restaurant Near Me</p>
+                    <p>Snacks Restaurant Near Me</p>
+                    <p>South Indian Restaurant Near Me</p>
+                    <p>Spanish Restaurant Near Me</p>
+                    <p>Sri Lankan Restaurant Near Me</p>
+                    <p>Steakhouse Restaurant Near Me</p>
+                    <p>Street Food Restaurant Near Me</p>
+                    <p>Sushi Restaurant Near Me</p>
+                    <p>Sweets Restaurant Near Me</p>
+                    <p>Tandoor Restaurant Near Me</p>
+                    <p>Tex-Mex Restaurant Near Me</p>
+                    <p>Thai Restaurant Near Me</p>
+                    <p>Thalis Restaurant Near Me</p>
+                    <p>Tibetan Restaurant Near Me</p>
+                    <p>Turkish Restaurant Near Me</p>
+                    <p>Vietnamese Restaurant Near Me</p>
+                    <p>Waffle Restaurant Near Me</p>
+                </div>
+                <hr>
+            </div>
+            <div class="footer5">
+                <div class="res">
+                    <h3>EXPLORE EVERY RESTAURANTS NEAR ME</h3>
+                </div>
+                <div class="res1">
+                    <p>Explore Restaurants Near Me</p>
+                    <br>
+                    <hr style="width: 1000px;">
+                </div>
+                
+                <div class="res2">
+                    <p>Explore Top Rated Restaurants Near Me</p>
+                    <br>
+                    <hr style="width: 400px;">
+                </div>
+            </div>
+            <div class="footer6">
+                <div class="end">
+                    <img src="/swiggy/imgs/Logo_f5xzza.webp" style="height: 60px;width: 200px; padding-left: 20px; padding: 20px;">
+                </div>
+                <div class="end1">
+                    <p>&#169 2023 Swiggy</p>
+                </div>
+                <div class="end2">
+                    <i class="fa-brands fa-facebook one" style="color:white;"></i><i class="fa-brands fa-pinterest two" style="color: white;"></i><i class="fa-brands fa-instagram three" style="color:white;"></i><i class="fa-brands fa-twitter four" style="color:white;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
