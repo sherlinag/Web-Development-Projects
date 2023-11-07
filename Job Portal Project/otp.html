@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OTP Code Verification Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      form input{
+     display:inline-block;
+     width:50px;
+     height:50px;
+     text-align:center;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>OTP Code Verification</h1>
+      <form id="otpForm" action="./updatepassword.html">
+        <label for="otpCode">Enter the OTP code sent to your phone:</label>
+        <br>
+        <br>
+        <form action="" class="mt-5">
+            <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1 >
+            <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1 >
+            <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1 >
+            <input class="otp" type="text" oninput='digitValidate(this)'onkeyup='tabChange(4)' maxlength=1 >
+        </form>
+        <button type="submit" ><a href="./updatepassword.html" style="text-decoration: none;color: white;">Verify OTP</a></button>
+      </form>
+      <p>Didn't receive the OTP</p>
+      <p>
+      <button type="submit"><a href="" style="text-decoration: none;color: white;">Resend OTP</a></button></p>
+    </div>
+    <script src="/js/otp.js"></script>
+  </body>
+</html>
