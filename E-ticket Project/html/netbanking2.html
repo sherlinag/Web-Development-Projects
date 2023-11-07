@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <style>
+        fieldset{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Transaction Details</h2>
+    <fieldset>
+        <legend>Funds Transfer</legend>
+        <form action="./paysuccessful.html">
+        <table>
+            <tr>
+                <td>Enter Amount :</td>
+                <td><input type="number" required placeholder="Enter Amount"></td>
+            </tr>
+            <tr>
+                <td>Account Type :</td>
+                <td><select name="" id="">
+                    <option hidden>-account type-</option>
+                    <option value="">Savings</option>
+                    <option value="">Current</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><a href="./netbanking.html"><button>CANCEL</button></a></td>
+                <td><input type="submit" value="PAY"></td>
+            </tr>
+        </table>
+    </form>
+    </fieldset>
+</body>
+</html>

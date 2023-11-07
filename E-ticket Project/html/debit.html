@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit-Card</title>
+    <style>
+        fieldset{
+            width: 21%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Debit card Transaction</h2>
+    <form action="./paysuccessful.html">
+    <fieldset>
+        <legend>Enter Debit Card Details</legend>
+        <table>
+            <tr>
+                <td>Cardholder's name :</td>
+                <td><input type="text" required placeholder="Card Holder's Name"></td>
+            </tr>
+            <tr>
+                <td>Debit Card No :</td>
+                <td><input type="number" required placeholder="xxxx xxxx xxxx xxxx"></td>
+            </tr>
+            <tr>
+                <td>Expiration Date :</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>CVV Code :</td>
+                <td><input type="number" required placeholder="xxx"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><input type="submit"></center></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

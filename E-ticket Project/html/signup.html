@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <script>
+        function signup_validation(){
+            // Email validation
+            var Email=document.getElementById("email").value
+            var flag_email=false
+            for(var i=0;i<Email.length;i++){
+                if(Email[i]=='@'){
+                    flag_email=true
+                }
+            }
+
+            // Phone validation 
+            var Phone=document.getElementById("phone").value
+            var flag_phone=false
+            if((6000000000<=Phone)&&(Phone<=9999999999)){
+                flag_phone=true
+            }
+
+            // Password validation
+            var Password=document.getElementById("password").value
+            var flag_password=false
+            var upper=0
+            var lower=0
+            var num=0
+            var special=0
+            for(var i=0;i<Password.length;i++){
+                if(('A'<=Password[i])&&(Password<='Z')){
+            }
+        }
+    }
+    </script>
+    <style>
+        fieldset{
+            width: 21%;
+        }
+        select{
+            width: 135%;
+        }
+        body{
+            background-color:aquamarine;
+        }
+        div{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <center>
+    <h2>Create Your Account</h2>
+    <fieldset>
+        <legend>SIGNUP</legend>
+    <table>
+           <tr>
+            <td>First Name :</td>
+            <td><input type="text" required placeholder="Enter First Name"></td>
+           </tr>
+           <tr>
+            <td>Last Name :</td>
+            <td><input type="text" placeholder="Enter Last Name"></td>
+           </tr>
+           <tr>
+            <td>Email-ID</td>
+            <td><input type="text" required placeholder="Enter Email-ID" id="email"></td>
+           </tr>
+           <tr>
+            <td>Phone No. :</td>
+            <td><input type="number" required placeholder="Enter Phone Number" id="phone"></td>
+           </tr>
+           <tr>
+            <td>Username :</td>
+            <td><input type="text" required placeholder="Enter Username"></td>
+           </tr>
+           <tr>
+            <td>Password :</td>
+            <td><input type="password" required placeholder="Enter Password" id="password"></td>
+           </tr>
+           <tr>
+            <td>Confirm Password :</td>
+            <td><input type="password" required placeholder="Confirm Password"></td>
+           </tr>                 
+    </table>
+    <br>
+    <input type="checkbox" required><label for="">I agree the <a href="./terms&conditions.html">terms & conditions</a></label>
+    <br>
+    <br>
+    <a href="./login.html"><input type="submit" value="SIGNUP" class="submit"></a>
+    </fieldset>
+</center>
+</div>
+</body>
+</html>

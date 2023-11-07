@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Trains</title>
+</head>
+<body>
+    <h2>TRAIN</h2>
+    <p>Book Your Train Tickets</p>
+    <h4>Search Trains Here</h4>
+    <form action="./FindTrain.html">
+        <table>
+            <tr>
+                <td>From :</td>
+                <td><input type="text" placeholder="From Station" required></td>
+            </tr>
+            <tr>
+                <td>To :</td>
+                <td><input type="text" placeholder="To Station" required></td>
+            </tr>
+            <tr>
+                <td>Date :</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Time :</td>
+                <td><input type="time"></td>
+            </tr>
+        
+            <tr>
+                <td>Ticket Catagory :</td>
+                <td>
+                    <select name="" id="" required>
+                        <option hidden>-Select Catagory-</option>
+                        <option value="">General</option>
+                        <option value="">Ladies</option>
+                        <option value="">SR.Citizen</option>
+                        <option value="">Person with Disability</option>
+                        <option value="">Tatkal</option>
+                        <option value="">Premium Tatkal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="SEARCH TRAIN"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

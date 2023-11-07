@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <style>
+        fieldset{
+            width: 21%;
+        }
+    </style>
+</head>
+<body>
+    <form action="./paysuccessful.html">
+    <h2>Credit Card Transaction</h2>
+    <fieldset>
+        <legend>Enter Credit Card Details</legend>
+        <table>
+            <tr>
+                <td>Cardholder's name :</td>
+                <td><input type="text" required placeholder="Card Holder's Name"></td>
+            </tr>
+            <tr>
+                <td>Credit Card No :</td>
+                <td><input type="number" required placeholder="xxxx xxxx xxxx xxxx"></td>
+            </tr>
+            <tr>
+                <td>Expiration Date :</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>CVC Code :</td>
+                <td><input type="number" required placeholder="xxx"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><input type="submit"></center></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

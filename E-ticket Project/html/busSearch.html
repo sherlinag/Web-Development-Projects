@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Buses</title>
+</head>
+<body>
+    <h2>BUS</h2>
+    <p>Book Your Bus Tickets</p>
+    <p>Assured seat of your choice</p>
+    <h4>Search Buses Here</h4>
+    <form action="./FindBus.html" >
+        <table>
+            <tr>
+                <td>From :</td>
+                <td><input type="text" placeholder="Starting Point" required></td>
+            </tr>
+            <tr>
+                <td>To :</td>
+                <td><input type="text" placeholder="Ending Point" required></td>
+            </tr>
+            <tr>
+                <td>Date :</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Travel Preference :</td>
+                <td><select name="" id="">
+                    <option hidden>-Select Preference-</option>
+                    <option value="">AC</option>
+                    <option value="">Non AC</option>
+                    <option value="">Sleeper</option>
+                    <option value="">Seater</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="SEARCH BUS"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
