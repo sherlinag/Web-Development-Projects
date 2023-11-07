@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Employee Table</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+	.bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 572px;
+		width: 100%;
+		margin: auto;
+		margin-top: -22px;
+	}
+
+	legend {
+		border: 2px solid black;
+		background: white;
+		position: relative;
+		border-radius: 10px;
+		margin-left: 20px;
+		padding: 8px;
+	}
+
+
+	.container {
+		border: 2px solid black;
+		border-radius: 10px;
+		margin: 20px;
+		padding: 30px;
+		height: 350px;
+		background-color: white;
+	}
+
+	table tr:nth-child(2) td:last-child {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+
+	h2 {
+		color: black;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	#togglePassword {
+		height: 20px;
+		width: 20px;
+		position: absolute;
+	}
+
+	input,
+	select {
+		padding: 8px;
+		margin: 15px;
+		outline: 0;
+		border: 1px solid rgb(0, 0, 0, .8);
+		border-radius: 3px;
+	}
+
+	input:hover {
+		border-color: white;
+		outline: 2px solid crimson;
+
+	}
+
+	input:focus {
+		border-color: white;
+		outline: 2px solid crimson;
+	}
+
+	#togglePassword {
+		margin-right: 20px;
+		font-size: 15px;
+	}
+
+	select option {
+		color: black;
+		font-size: 15px;
+	}
+
+	.submit {
+		height: 100px;
+		width: 310px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	button {
+		background: linear-gradient(150deg, #f208fd, #7478ed, #04d9dd);
+		color: white;
+		border: none;
+		border-radius: 5px;
+		padding: 6px;
+		font-weight: bold;
+		box-shadow: 1px 3px 4px #999;
+	}
+
+	button:hover {
+		transform: translateY(1px);
+	}
+
+	button:active {
+		transform: translateY(3px);
+		box-shadow: 1px 2px 2px #666
+	}
+</style>
+<body>
+		<h2>ADD EMPLOYEE DATA</h2>
+		<section class="bottom">
+			<div class="container">
+				<form action="SaveServlet" method="post">
+					<table>
+						<tr>
+							<td>
+								<h4><label for="name">NAME</label></h4>
+							</td>
+							<td>
+								<h4> : </h4>
+							</td>
+							<td><input type="text" placeholder="Enter Name" id="name" name="name" required></td>
+						</tr>
+						<tr>
+							<td>
+								<h4><label for="password">PASSWORD</label></h4>
+							</td>
+							<td>
+								<h4> : </h4>
+							</td>
+							<td><input type="password" placeholder="Enter Password" id="password" name="password"
+									required><i class="bi bi-eye-slash" id="togglePassword"></i></td>
+						</tr>
+						<tr>
+							<td>
+								<h4><label for="email">EMAIL</label></h4>
+							</td>
+							<td>
+								<h4> : </h4>
+							</td>
+							<td><input type="email" placeholder="Enter Email" id="email" name="email" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4><label for="country">COUNTRY</label></h4>
+							</td>
+							<td>
+								<h4> : </h4>
+							</td>
+							<td>
+								<select id="country" name="country" required>
+									<option hidden>-Select Country-</option>
+									<option>India</option>
+									<option>USA</option>
+									<option>UK</option>
+									<option>UAE</option>
+									<option>Canada</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+					<div class="submit"><button>Save</button>
+					</div>
+				</form>
+				<form action="ViewServlet">
+					<div class="submit"><button>View Employee</button></div>
+				</form>
+			</div>
+	</section>
+	<script>
+		const togglepassword = document.querySelector("#togglePassword");
+		const password = document.querySelector("#password");
+		togglepassword.addEventListener('click', function () {
+			const type = password.getAttribute("type") === "password" ? "text" : "password";
+			password.setAttribute("type", type);
+			this.classList.toggle("bi-eye");
+		});
+	</script>
+</body>
+</html>
